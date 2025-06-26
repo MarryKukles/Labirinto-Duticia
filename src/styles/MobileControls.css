@@ -1,0 +1,48 @@
+.mobile-controls {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+.controls-grid {
+  display: grid;
+  grid-template-areas:
+    ". up ."
+    "left . right"
+    ". down .";
+  gap: 10px;
+}
+
+.control-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid #ff4d6d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ff4d6d;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.control-button:active {
+  transform: scale(0.95);
+  background-color: #ff4d6d;
+  color: white;
+}
+
+.control-button.up { grid-area: up; }
+.control-button.left { grid-area: left; }
+.control-button.right { grid-area: right; }
+.control-button.down { grid-area: down; }
+
+@media (min-width: 2801px) {
+  .mobile-controls {
+    display: none;
+  }
+}

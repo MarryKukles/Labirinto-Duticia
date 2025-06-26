@@ -1,0 +1,15 @@
+{
+  "short_name": "Labirinto",
+  "name": "Labirinto Dutícia",
+  "icons": [
+    {
+      "src": "image.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ff4d6d",
+  "background_color": "#ffdde1"
+}
